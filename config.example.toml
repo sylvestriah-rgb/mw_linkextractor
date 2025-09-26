@@ -2,3 +2,4 @@ wiki_username = "user@botname"
 wiki_password = "bot-password"
 wiki_api_url = "https://wiki.org/api.php"
 blacklist = [""]
+successfully_archived = "archived-default.txt"

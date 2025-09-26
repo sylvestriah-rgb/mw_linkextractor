@@ -57,6 +57,6 @@ pub async fn run(wiki_url: String, bot_user: String, bot_pass: String) -> Result
     let client = login(wiki_url, bot_user, bot_pass).await?;
     let pages = list_pages(&client).await?;
     let links = external_links(&client, pages).await?;
-    println!("external link count: {:?}", links.len());
+    println!("total external links: {:?}", links.len());
     Ok(links)
 }
